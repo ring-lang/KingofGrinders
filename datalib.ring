@@ -210,11 +210,11 @@ Class ControllerBase
 	func Routing
 
 		switch  	aPageVars[cOperation]
-		on NULL 	showtable()
+		on NULL 	             showtable()
 		on :add    	addrecord()
 		on :save    	saverecord()
 		on :delete	deleterecord()
-		on :edit	editrecord()
+		on :edit	             editrecord()
 		on :update	updaterecord()
 		off
 

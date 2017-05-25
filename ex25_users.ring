@@ -23,13 +23,15 @@ Class UsersView from ViewBase
 			[oTranslation.aColumnsTitles[2],"textbox","username",
 			oController.oModel.UserName,oPage.stylewidth("100%")],
 			[oTranslation.aColumnsTitles[3],"textbox","email",
-			oController.oModel.Email,oPage.stylewidth("50%")]
+			oController.oModel.Email,oPage.stylewidth("50%")],
+                                        [oTranslation.aColumnsTitles[4],"textbox","fgtpwd",
+			oController.oModel.fgtpwd,oPage.stylewidth("50%")]
            ]
 
 Class UsersLanguageEnglish
   cTitle = "Users Table"
   cBack = "back"
-  aColumnsTitles = ["ID","User Name","Email"]
+  aColumnsTitles = ["ID","User Name","Email","fgtpwd"]
   cOptions = "Options"
   cSearch = "Search"
   comboitems = ["Select Option...","Edit","Delete"]
