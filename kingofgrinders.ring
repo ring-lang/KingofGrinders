@@ -35,13 +35,13 @@ Which species? That is dependent upon your karmas (acts of goodwill, evil). Just
         divend()
 newline()
 newline()
-formpost ("ex26.ring")
+formstart ("ex26.ring")
 divstart([ :style= styletextcenter() + stylegradient(52) ])
                   submit([:value = "Register"  ])
                 
 divend()
 formend()
-formpost("ex28.ring")
+formstart("ex28.ring")
 divstart([ :style= styletextcenter() + stylegradient(52) ])
                   submit([:value = "Login"  ])
                 
