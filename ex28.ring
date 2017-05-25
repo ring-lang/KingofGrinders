@@ -13,7 +13,7 @@ new page {
     newline()
   boxend()
   divstart([:style = stylegradient(6) + stylesize("100%","95%") ])
-  link([ :url = website, :title = "back" , :style = stylecolor("white")])   
+  link([ :url = "kingofgrinders.ring", :title = "back" , :style = stylecolor("white")])   
   newline()
   divstart([ :style= styledivcenter("500","130") + stylegradient(52) ])   
   formpost("ex29.ring")
@@ -42,8 +42,14 @@ new page {
         cellend()
       rowend()
     tableend()
+
+divstart([:style = stylegradient(6)])
+  link([ :url = "forgotpasswordui.ring", :title = "Forgot Password" , :style = stylecolor("white")])
+divend()
+
   formend()
   divend()
   divend()
+
 }
 

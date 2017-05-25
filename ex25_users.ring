@@ -2,12 +2,13 @@ Class UsersModel from ModelBase
   cSearchColumn = "username"
 
 Class UsersController From ControllerBase
-  aColumnsNames = ["id","username","email"]
+  aColumnsNames = ["id","username","email","fgtpwd"]
 
   Func UpdateRecord
     oModel.id = aPageVars[cRecID]
     oModel.updatecolumn("username", aPageVars[:username] )
     oModel.updatecolumn("email", aPageVars[:email] )
+    oModel.updatecolumn("fgtpwd", aPageVars[:fgtpwd])
     oView.UpdateView(self)
 
 Class UsersView from ViewBase

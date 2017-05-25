@@ -24,13 +24,21 @@ ok
 aPageVars["salt"] = str2hex(RandBytes(32))
 aPageVars["pwhash"] = sha256(aPagevars["password"]+aPageVars["salt"])
 aPageVars["sessionid"] = str2hex(randbytes(32))
+aPageVars["fgtpwd"] = aPageVars["fgtpwd"]
 oUser.Insert()
+oUser.Disconnect()
 new page {
 	cookie("sessionid",aPageVars["sessionid"])
 	text("New User Created!")
 	newline()
 	text("User Name : " + aPageVars["username"])
 	newline()
+formstart("ex28.ring")
+divstart([ :style= styletextcenter() + stylegradient(52) ])
+                  submit([:value = "Login"  ])
+                
+divend()
+formend()
 }
-oUser.Disconnect()
+
 
