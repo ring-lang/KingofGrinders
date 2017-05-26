@@ -1,18 +1,14 @@
 
-<%= "Send email..." + nl %>
 <% 
 	sendemail("smtp://smtp.gmail.com:587",
         "mailmeharinder13@gmail.com",
-        "-------",
+        "ssdfsdfasdfsdf",
         "mailmeharinder13@gmail.com",
-        "mailmeharry2008@rediffmail.com",
+        aPageVars["Email"],
         "mailmeharinder13@gmail.com",
         "Sending email from Ring",
         "Hello 
-         Your secret Forgot Password Code is abc
+         Your secret Forgot Password Code is aPageVars["fgtpwd"]
          Thank you!
          Greetings,
          Harry")  %> 
-
-
-<%= "Done.." + nl %>

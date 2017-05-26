@@ -12,13 +12,16 @@ Import System.Web
 oUser = new UsersModel
 oUser.Connect()
 lResult = oUser.FindWith("username",aPageVars["username"])
-new page {
+new page
+ {
 	if lResult
                                 if aPagevars["Email"] = oUser.Email
 divstart([ :style= styletextcenter() + stylegradient(52) ])
 			text ("Username and Email match. Secret word is sent to your Email.")
-		abc = oUser.fgtpwd
-
+formpost("forgotpassword.ring")
+aPagevars["Email"] = oUser.Email
+aPagevars["fgtpwd"] = oUser.fgtpwd
+formend()
  	New Page
                 {
 
@@ -27,13 +30,14 @@ divstart([ :style= styletextcenter() + stylegradient(52) ])
 divend()
 newline()
 newline()
+}
               formstart("changepasswordui.ring")
                   divstart([ :style= styletextcenter() + stylegradient(52) ])
                   submit([:value = "Change Password"  ])
                 
                  divend()
               formend()
-                }	
+              	
 		else
 			text ("Username and Email doesn't match. Make sure you typed them correctly.")
 		ok
@@ -41,8 +45,7 @@ newline()
 	else
 		text("Bad User Name!")
 	ok
-}
 oUser.Disconnect()
-
+}
 
 	

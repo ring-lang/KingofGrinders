@@ -16,6 +16,11 @@ Func Main
                   p([ :text = "King of Grinders is a unique MMORPG. It is basically a real living world simulation in text.
 You will be born here, do chores, work for living and money, worship,  die and then reborn. 
 Dinosaur age to Modern Age and even God Age, ascensions to higher world and getting immortality, a never seen before game concepts are here.
+Its a mixture of ZPG (Zero Player Game), AFK Mode Player Game and even Full time Hardcore Player Game. The goodies
+or rewards from modes are different according to this rule - - -  ZPG mode < AFK Mode < Full Play Mode 
+(Auto switching mode is also there, if in case you are busy and immediately leave the game with 
+your PC on, after 5 minutes of inactivity AFK mode will start, if your pc is shutdown or crashes, then after 5 minutes ZPG mode automatically starts, and full play game
+mode is automatically recognized if your mouse keyboard are working and giving commands actively.)
 
 " ])
                 divend()
