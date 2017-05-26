@@ -40,9 +40,9 @@ Class UsersLanguageEnglish
   cRecordDeleted = "Record Deleted!"
   aMovePages = ["First","Prev","Next","Last"]
   cPage = "Page"
-  cOf = "of"
   cRecordsCount = "Records Count"
   cSave = "Save"
+  cOf = "of"
   temp = new page
   cTextAlign = temp.StyleTextRight()
   cNoRecords = "No records!"
