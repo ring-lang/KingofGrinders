@@ -1,14 +1,17 @@
 
-<% 
-	sendemail("smtp://smtp.gmail.com:587",
-        "mailmeharinder13@gmail.com",
-        "ssdfsdfasdfsdf",
-        "mailmeharinder13@gmail.com",
-        aPageVars["Email"],
-        "mailmeharinder13@gmail.com",
-        "Sending email from Ring",
-        "Hello 
-         Your secret Forgot Password Code is aPageVars["fgtpwd"]
-         Thank you!
-         Greetings,
-         Harry")  %> 
+<%
+
+				sendemail("smtp://smtp.gmail.com:587",
+					"mailmeharinder13@gmail.com",
+					"sdfsadf",
+					"mailmeharinder13@gmail.com",
+                     "oUser.email",
+					"mailmeharinder13@gmail.com",
+					"Sending email from Ring",
+					"Hello 
+					 Your secret Forgot Password Code is ouser.fgtpwd
+					 Thank you!
+					 Greetings,
+					 Harry")  
+					 
+%> 

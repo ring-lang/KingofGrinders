@@ -19,7 +19,8 @@ Dinosaur age to Modern Age and even God Age, ascensions to higher world and gett
 Its a mixture of ZPG (Zero Player Game), AFK Mode Player Game and even Full time Hardcore Player Game. The goodies
 or rewards from modes are different according to this rule - - -  ZPG mode < AFK Mode < Full Play Mode 
 (Auto switching mode is also there, if in case you are busy and immediately leave the game with 
-your PC on, after 5 minutes of inactivity AFK mode will start, if your pc is shutdown or crashes, then after 5 minutes ZPG mode automatically starts, and full play game
+your PC on, after 5 minutes of inactivity AFK mode will start, if your pc is shutdown or crashes, 
+then after 5 minutes ZPG mode automatically starts, and full play game
 mode is automatically recognized if your mouse keyboard are working and giving commands actively.)
 
 " ])
@@ -34,7 +35,8 @@ Which species? That is dependent upon your karmas (acts of goodwill, evil). Just
                 divend()
                 divstart([ :class = "col-sm-4" ])
                   h3("Contact Us & Donations")
-                  p([ :text = "As you know we are 100 percent free to play game but if you like our work you can donate to keep our servers alive. To donate simply contact me at my email for further instructions. Also you can write any of your other queries to mailmeharry2008@yahoo.com" ])
+                  p([ :text = "As you know we are 100 percent free to play game but if you like our work you can donate to keep our servers alive. 
+				  To donate simply contact me at my email for further instructions. Also you can write any of your other queries to mailmeharry2008@yahoo.com" ])
                 divend()
           divend()
         divend()
