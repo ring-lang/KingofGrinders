@@ -1,0 +1,21 @@
+New Page
+{
+<%= "Send email..." + nl%>
+<% sendemail("smtp://smtp.gmail.com:587",
+        "mailmeharinder13@gmail.com",
+        "------",
+        "mailmeharinder13@gmail.com",
+        "mailmeharry2008@rediffmail.com",
+        "mailmeharry2008@yahoo.com",
+        "Sending email from Ring",
+        "Hello
+         How are you?
+         Are you fine?
+         Thank you!
+         Greetings,
+         Harry")  %> 
+
+
+<%= "Done.." + nl
+%>
+}

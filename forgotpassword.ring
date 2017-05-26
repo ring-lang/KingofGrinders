@@ -2,11 +2,13 @@
 Load "weblib.ring"
 Import System.Web
 
-cTemp = Template("sendfgtpwdmail.html",self)
+
  New Page
                 {
+
+	cTemp = Template("sendfgtpwdmail.html",self)
                         boxstart()
-                                text( "Test Templates" )
+                                text( "Send Forgot Password Secret Word to Email" )
                                 newline()
                         boxend()
                         html(cTemp)
