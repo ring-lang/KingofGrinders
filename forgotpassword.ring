@@ -12,11 +12,11 @@ lResult = oUser.FindWith("username",aPageVars["username"])
 new page
  {
 	if lResult
-            if aPagevars["Email"] = oUser.Email
-			    formpost("sendfgtpwdmail.html")
-						 oUser.fgtpwd
-						 oUser.email
-formend()			
+            if aPagevars["Email"] = oUser.Email			
+			formpost("sendfgtpwdmail.html")
+			a = ouser.email
+			b = ouser.fgtpwd
+			formend()
 			divstart([ :style= styletextcenter() + stylegradient(52) ])
 				
 			          text ("Username and Email match. Secret word is sent to your Email.")
