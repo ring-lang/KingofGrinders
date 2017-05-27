@@ -10,27 +10,26 @@ oUser = new UsersModel
 oUser.Connect()
 lResult = oUser.FindWith("username",aPageVars["username"])
 if lResult
-		if aPagevars["fgtpwd"]=oUser.fgtpwd
+		
 				New page
                 {
-				aPageVars["pwhash"] = sha256(aPagevars["password"]+aPageVars["salt"])
-				oUser.username = aPageVars["username"]
-				oUser.updatecolumn("pwhash", aPageVars["pwhash"])
-				oUser.Disconnect()				
 				
+				if aPagevars["fgtpwd"]=oUser.fgtpwd
 					divstart([ :style= styletextcenter() + stylegradient(52) ])
 					
-					    formstart("ex28.ring")
+					    formstart("ChangePasswordUI.ring")
 						divstart([ :style= styletextcenter() + stylegradient(52) ])
-						submit([:value = "Login"  ])
+						submit([:value = "Change Password"  ])
+						username = oUser.username
 						divend()
 						formend()
+					else
+					    text ("Forgot Password doesn't match. Make sure you typed them correctly!")
+		            ok
 				}
-		else
-					    text ("Forgot Password doesn't match. Make sure you typed them correctly.")
-		ok
+		
 else
-      text ("Username doesn't exist in database.")
+      text ("Username doesn't exist in database!")
 ok
 oUser.Disconnect()
 
