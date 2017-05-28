@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 -- Database: `kingofgrinders`
 --
 
+CREATE DATABASE `kingofgrinders`;
+USE  kingofgrinders ;
+
 -- --------------------------------------------------------
 
 --
