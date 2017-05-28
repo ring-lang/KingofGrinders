@@ -16,6 +16,11 @@ new page {
 			aPageVars["sessionid"] = str2hex(randbytes(32))
 			oUser.UpdateColumn("sessionid",aPageVars["sessionid"])
 			cookie("sessionid",aPageVars["sessionid"])
+						formstart("MainGamePageUI.ring")
+						divstart([ :style= styletextcenter() + stylegradient(52) ])
+						submit([:value = "Lets Play"  ])
+						formend()
+						divend()
 		else
 			text ("Bad password!")
 		ok
