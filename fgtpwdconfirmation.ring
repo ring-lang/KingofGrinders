@@ -20,9 +20,9 @@ if lResult
 					    formstart("ChangePasswordUI.ring")
 						divstart([ :style= styletextcenter() + stylegradient(52) ])
 						submit([:value = "Change Password"  ])
-						username = oUser.username
-						divend()
 						formend()
+						divend()
+						
 					else
 					    text ("Forgot Password doesn't match. Make sure you typed them correctly!")
 		            ok
