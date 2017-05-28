@@ -13,10 +13,11 @@ if lResult
 		if aPagevars["fgtpwd"]=oUser.fgtpwd
 				New page
                 {
+				aPageVars["salt"] = str2hex(RandBytes(32))
 				aPageVars["pwhash"] = sha256(aPagevars["password"]+aPageVars["salt"])
 				oUser.username = aPageVars["username"]
 				oUser.updatecolumn("pwhash", aPageVars["pwhash"])
-				oUser.Disconnect()				
+				oUser.updatecolumn("salt", aPageVars["salt"])
 				
 					divstart([ :style= styletextcenter() + stylegradient(52) ])
 					
