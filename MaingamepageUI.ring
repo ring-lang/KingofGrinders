@@ -56,7 +56,7 @@ tablestart([ :Style =  stylemarginleft("0%") + stylemargintop("2%") + stylewidth
 		rowstart([])
 				  
 				cellstart([:style= styletextcenter() + stylegradient(51) + stylewidth("100%")])
-				  text("Welcome to the King of Grinders, Mr. " + ouser2.username)
+				  text("Welcome to the King of Grinders, " + ouser2.username)
 				cellend()
 				
 		rowend()
@@ -107,8 +107,27 @@ tablestart([ :Style =  stylemarginleft("0%") + stylemargintop("2%") + stylewidth
 		h4("Chat")
 		tablestart([ :Style =  stylemarginleft("0%") + stylemargintop("2%") + stylewidth("100%") ])
 		rowstart([])
-			cellstart([:style= styletextcenter() + stylegradient(12) + stylesize("500px", "300px")])
-
+			formpost("maingamepageui.ring")
+			hidden("username", oUser2.username)
+			cellstart([ :style = stylewidth("100%")  ])
+				textbox([:name = "message" , :style = stylewidth("100%")])
+			cellend()
+			cellstart([ :style = stylewidth("100%")  ])
+				submit([:value = "Send Chat"  ])
+			cellend()
+			formend()
+		rowend()
+		rowstart([])
+			cellstart([:style= stylegradient(12) + stylesize("500px", "300px")])
+			ouser3= new modelbase
+			ouser3.ctablename="chat"
+			ouser3.connect()
+			ouser3.acolumns = ["userid", "time", "message"]
+			apagevars["userid"]=ouser2.username
+			apagevars["time"]=date() + " " + time ()
+			apagevars["message"]=apagevars["message"]
+			ouser3.insert()
+			#ouser3.read(1,1)
 			cellend()
 		rowend()
 		tableend()
