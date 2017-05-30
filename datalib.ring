@@ -10,7 +10,9 @@ Class Database
 	Func Connect
 
 		con = mysql_init() 
-		mysql_connect(con, cServer, cUserName, cPassWord,cDatabase)
+		if not mysql_connect(con, cServer, cUserName, cPassWord,cDatabase)
+			raise("Error (DataLib-1) : Can't connect to the database server!")
+		ok
 
 	Func Disconnect
 
@@ -210,11 +212,11 @@ Class ControllerBase
 	func Routing
 
 		switch  	aPageVars[cOperation]
-		on NULL 	             showtable()
+		on NULL 	showtable()
 		on :add    	addrecord()
 		on :save    	saverecord()
 		on :delete	deleterecord()
-		on :edit	             editrecord()
+		on :edit	editrecord()
 		on :update	updaterecord()
 		off
 
